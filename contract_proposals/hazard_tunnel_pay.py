@@ -3,20 +3,20 @@ from selenium.webdriver.common.by import By
 import chromedriver_autoinstaller
 import time
 
-chromedriver_autoinstaller.install()
-# driver = webdriver.Chrome()
-# driver.get("http://www.python.org")
-# assert "Python" in driver.title
-
 #keep the chrome browser open
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
 
+# set up the browser driver
+chromedriver_autoinstaller.install()
+# driver = webdriver.Chrome(options=options, executable_path="path/to/executable")
+driver = webdriver.Chrome(options=options, )
+# driver = webdriver.Chrome()
+# driver.get("http://www.python.org")
+# assert "Python" in driver.title
+
 
 def hazard_tunnel_pay():
-    # set up the browser driver
-    # driver = webdriver.Chrome(options=options, executable_path="path/to/executable")
-    driver = webdriver.Chrome(options=options, )
     # navigate to the form page
     driver.get("https://www.ibew11.org/contract-proposals/")
 

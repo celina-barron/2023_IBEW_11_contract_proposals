@@ -9,6 +9,8 @@ import contract_proposals.manditory_app_rotation
 import contract_proposals.increased_boot_stipend
 import contract_proposals.twenty_over_three
 
+
+
 contract_proposals.all_overtime_as_doubletime
 contract_proposals.hazard_tunnel_pay
 contract_proposals.walk_in_walk_out
