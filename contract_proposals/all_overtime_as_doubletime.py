@@ -4,6 +4,9 @@ import chromedriver_autoinstaller
 import time
 
 chromedriver_autoinstaller.install() 
+driver = webdriver.Chrome()
+driver.get("http://www.python.org")
+assert "Python" in driver.title
 
 #keep the chrome browser open
 options = webdriver.ChromeOptions()
