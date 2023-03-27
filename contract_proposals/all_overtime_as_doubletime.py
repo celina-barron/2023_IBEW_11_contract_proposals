@@ -3,9 +3,6 @@ from selenium.webdriver.common.by import By
 import chromedriver_autoinstaller
 import time
 
-service = ChromeService(executable_path=ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
-
 chromedriver_autoinstaller.install() 
 driver = webdriver.Chrome()
 driver.get("http://www.python.org")

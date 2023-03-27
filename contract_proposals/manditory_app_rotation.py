@@ -3,9 +3,6 @@ from selenium.webdriver.common.by import By
 import chromedriver_autoinstaller
 import time
 
-service = ChromeService(executable_path=ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
-
 chromedriver_autoinstaller.install()
 driver = webdriver.Chrome()
 driver.get("http://www.python.org")
@@ -23,7 +20,7 @@ def manditory_app_rotation():
     # navigate to the form page
     driver.get("https://www.ibew11.org/contract-proposals/")
 
-    time.sleep(2)
+    # time.sleep(2)
 
     # variables for text to be inserted
     articles_and_sections = "Adding a Manditory Apprentice Rotation section to the end of ARTICLE V: STANDARD INSIDE APPRENTICESHIP & TRAINING LANGUAGE"
